@@ -1,0 +1,165 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by
+        Bartek Szopka @bartaz</title>
+
+    <meta name="description"
+        content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link
+        href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic"
+        rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+
+<body>
+    <div id="backdrop"></div>
+    <div id="impress">
+
+
+        <div id="welcome" class="step slide" data-x="-1000" data-y="-1500">
+<p>welcome</p>
+        </div>
+
+
+
+        <div class="step slide js" data-x="0" data-y="-1500">
+        </div>
+
+
+
+
+        <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+            <span class="try">So What is</span>
+            <h1>JavaScript?!</h1>
+            <span class="footnote"><sup>*</sup> any Ideas?</span>
+        </div>
+
+
+        <div id="what" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+          
+            <p class="definition">
+                JavaScript was created to make <strong>webpages more dynamic</strong> (e.g. change content on a
+                page directly from inside the browser)
+            </p>
+			
+			  <p class="definition">JavaScript is a <strong> dynamic, weakly typed </strong> programming language which is
+                <strong>interpreted at runtime</strong>, It can be executed as part of a webpage in a browser or directly
+                on <strong>any
+                    machine (“host environment”).</strong></p>
+        </div>
+        
+
+
+
+        <div id="what-pic" class="step" data-x="10000" data-y="10000" data-rotate="180" data-scale="6">
+            <img src="./img/black-man-wait-what-meme.jpg">
+       </div>
+
+
+        <div id="how" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+            
+        </div>
+        
+        <div id="example" class="step" data-x="5000" data-y="3000" data-rotate="90" data-scale="5">
+            <p class="definition">
+                JavaScript is a
+            <strong><a href="info/dynamic.html">dynamic, interpreted</a></strong>
+            and
+            <strong><a href="info/weakly-typed.html">weakly typed</a></strong>
+            programming language
+            </p>
+			
+            <p class="definition ex2">
+                JavaScript is a
+            <a href="#example" data-text="That means that code is not pre-compiled but instead evaluated, compiled and executed at runtime (e.g. when the browser executes the script)." class="info-modal">dynamic, interpreted</a>
+            and
+            <a href="#example" data-text="Weakly typed languages assign types (like 'number') to variables (data containers) at runtime - i.e. you (the developer) can't set the types you want to use in certain places in advance. Only indirectly by making sure you're always working with the correct values." class="info-modal">weakly typed</a>
+            programming language
+            </p>
+			
+        </div>
+        
+
+
+        <div id="sum" class="step" data-x="3500" data-y="-400" data-z="0" data-rotate="270" data-scale="6">
+            <!-- <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b
+                    class="scaling">scaling</b> them on an infinite canvas</p> -->
+                    <img src="./img/download.png">
+                    <ul>
+                        <li><strong>Interpreted at runtime </strong></li>
+                        <li><strong>Dynamic, weakly typed </strong></li>
+                        <li><strong>Hosted language (Runs in different environments) </strong></li>
+                      
+                    </ul>
+        </div>
+
+        <div id="engine" class="step item" data-x="8000" data-y="-5000" data-scale="6">
+                <p class="heading"><strong>How is JavaScript Executed </strong></p>
+                <img src="./img/execution.PNG">
+    
+            </div>
+
+        <div id="dynamic" class="step item" data-x="6700" data-y="-10000" data-scale="6">
+            <p class="heading"><strong>Dynamic, Weakly typed </strong></p>
+            <img src="./img/Dynamic&WeeklyTyped.PNG">
+
+        </div>
+
+        <div id="hosted" class="step item" data-x="500" data-y="-5000" data-scale="6">
+                <p class="heading"><strong>Hosted language (Runs in different environments)</strong></p>
+                <img src="./img/hosted.PNG">
+    
+            </div>
+
+    <div id="points" class="step" data-x="7000" data-y="2000" data-rotate="20" data-scale="4">
+        <ul>
+            <li><strong>JavaScript in Browser Limitations</strong></li>
+            <li><strong>What makes JavaScript unique?</strong></li>
+          
+        </ul>
+        </div>
+
+        <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+            <p>one more thing...</p>
+        </div>
+
+
+        <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40"
+            data-rotate-y="10" data-scale="2">
+            <p><span class="have">JavaScript</span> <span class="you">is</span> <span class="noticed">not</span> <b class="java">Java<sup>*</sup></b></p>
+            <span class="footnote">programs in this language are called scripts</span>
+        </div>
+
+        <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
+        </div>
+
+    </div>
+
+
+    <div id="impress-toolbar"></div>
+
+    
+    <script>
+        if ("ontouchstart" in document.documentElement) {
+            document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+        }
+    </script>
+
+
+    <script src="js/impress.js"></script>
+    <script>
+        impress().init();
+    </script>
